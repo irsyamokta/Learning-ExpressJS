@@ -3,7 +3,7 @@ import {getUsers, postUsers, putUsers, deleteUsers} from "../controller/UsersCon
 
 const userRouter = express.Router()
 
-userRouter.get('/:id_user', getUsers)
+userRouter.get('/', getUsers)
 userRouter.post('/', postUsers)
 userRouter.put('/:id_user', putUsers) 
 userRouter.delete('/:id_user', deleteUsers) 
